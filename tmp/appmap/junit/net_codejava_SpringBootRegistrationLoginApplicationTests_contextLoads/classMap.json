@@ -1,0 +1,26 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "contextLoads",
+                "type": "function",
+                "static": false,
+                "location": "net/codejava/SpringBootRegistrationLoginApplicationTests.java:11"
+              }
+            ],
+            "name": "SpringBootRegistrationLoginApplicationTests",
+            "type": "class"
+          }
+        ],
+        "name": "codejava",
+        "type": "package"
+      }
+    ],
+    "name": "net",
+    "type": "package"
+  }
+]

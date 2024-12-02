@@ -1,0 +1,56 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "testFindUserByEmail",
+                "type": "function",
+                "static": false,
+                "location": "net/codejava/UserRepositoryTests.java:25"
+              }
+            ],
+            "name": "UserRepositoryTests",
+            "type": "class"
+          },
+          {
+            "children": [
+              {
+                "name": "findByEmail",
+                "type": "function",
+                "static": false,
+                "location": "net/codejava/UserRepository.java:-1"
+              }
+            ],
+            "name": "UserRepository",
+            "type": "class"
+          }
+        ],
+        "name": "codejava",
+        "type": "package"
+      }
+    ],
+    "name": "net",
+    "type": "package"
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "insert into users (email, first_name, last_name, password) values (?, ?, ?, ?)"
+      },
+      {
+        "type": "query",
+        "name": "select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.first_name as first_na3_0_0_, user0_.last_name as last_nam4_0_0_, user0_.password as password5_0_0_ from users user0_ where user0_.id=?"
+      },
+      {
+        "type": "query",
+        "name": "select user0_.id as id1_0_, user0_.email as email2_0_, user0_.first_name as first_na3_0_, user0_.last_name as last_nam4_0_, user0_.password as password5_0_ from users user0_ where user0_.email=?"
+      }
+    ]
+  }
+]

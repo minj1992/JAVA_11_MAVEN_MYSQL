@@ -1,0 +1,29 @@
+{
+  "name": "User repositorys test find user by email",
+  "app": "java",
+  "language": {
+    "name": "java",
+    "version": "11.0.23+9-adhoc..jdk11u",
+    "engine": "OpenJDK 64-Bit Server VM"
+  },
+  "client": {
+    "name": "appmap-java",
+    "url": "https://github.com/appland/appmap-java"
+  },
+  "recorder": {
+    "name": "junit",
+    "type": "tests"
+  },
+  "recording": {
+    "defined_class": "net.codejava.UserRepositoryTests",
+    "method_id": "testFindUserByEmail"
+  },
+  "source_location": "net/codejava/UserRepositoryTests.java:25",
+  "frameworks": [
+    {
+      "name": "JUnit",
+      "version": "5"
+    }
+  ],
+  "test_status": "succeeded"
+}

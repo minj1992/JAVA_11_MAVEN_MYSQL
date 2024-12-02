@@ -1,0 +1,147 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "navigate",
+          "referer": "http://localhost:8080/users",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-GB,en;q=0.9,en-US;q=0.8",
+          "cookie": "SDPSESSIONID=3E2D11C8170F3CDEC4FC0984170D77FA; sdpcsrfcookie=7d924063-a82e-40d3-b114-a59896fbacdc; _zcsr_tmp=7d924063-a82e-40d3-b114-a59896fbacdc; JSESSIONID=EEFE3D10C54BD2A933FE904407A65596",
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "sec-ch-ua": "\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:8080",
+          "upgrade-insecure-requests": "1",
+          "connection": "keep-alive",
+          "accept-encoding": "gzip, deflate, br, zstd",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+          "sec-fetch-dest": "document"
+        },
+        "normalized_path_info": "/",
+        "path_info": "/",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 1,
+      "thread_id": 138
+    },
+    {
+      "defined_class": "net.codejava.HomeController",
+      "event": "call",
+      "id": 2,
+      "lineno": 12,
+      "method_id": "home",
+      "parameters": [
+        {
+          "class": "org.springframework.validation.support.BindingAwareModelMap",
+          "kind": "req",
+          "name": "model",
+          "object_id": 439818381,
+          "value": "{message=Hello, World!}"
+        }
+      ],
+      "path": "net/codejava/HomeController.java",
+      "receiver": {
+        "class": "net.codejava.HomeController",
+        "object_id": 838301585,
+        "value": "net.codejava.HomeController@31f77791"
+      },
+      "static": false,
+      "thread_id": 138
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 3,
+      "parent_id": 2,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 515715487,
+        "value": "index"
+      },
+      "thread_id": 138
+    },
+    {
+      "elapsed": 0.00103094,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "X-Frame-Options": "DENY",
+          "Transfer-Encoding": "chunked",
+          "Keep-Alive": "timeout=60",
+          "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+          "X-Content-Type-Options": "nosniff",
+          "Connection": "keep-alive",
+          "Pragma": "no-cache",
+          "Expires": "0",
+          "X-XSS-Protection": "1; mode=block",
+          "Content-Language": "en-GB",
+          "Date": "Sun, 01 Dec 2024 15:24:39 GMT",
+          "Content-Type": "text/html;charset=UTF-8"
+        },
+        "status": 200
+      },
+      "id": 4,
+      "parent_id": 1,
+      "thread_id": 138
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "GET / (200) - 20:54:39.823",
+    "app": "java",
+    "language": {
+      "name": "java",
+      "version": "11.0.23+9-adhoc..jdk11u",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "home",
+                  "type": "function",
+                  "static": false,
+                  "location": "net/codejava/HomeController.java:12"
+                }
+              ],
+              "name": "HomeController",
+              "type": "class"
+            }
+          ],
+          "name": "codejava",
+          "type": "package"
+        }
+      ],
+      "name": "net",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /"
+        }
+      ]
+    }
+  ]
+}

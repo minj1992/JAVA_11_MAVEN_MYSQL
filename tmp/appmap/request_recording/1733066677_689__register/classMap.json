@@ -1,0 +1,36 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "showRegistrationForm",
+                "type": "function",
+                "static": false,
+                "location": "net/codejava/AppController.java:25"
+              }
+            ],
+            "name": "AppController",
+            "type": "class"
+          }
+        ],
+        "name": "codejava",
+        "type": "package"
+      }
+    ],
+    "name": "net",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /register"
+      }
+    ]
+  }
+]

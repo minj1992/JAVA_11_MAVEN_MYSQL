@@ -1,0 +1,232 @@
+{
+  "events": [
+    {
+      "defined_class": "net.codejava.UserRepositoryTests",
+      "event": "call",
+      "id": 1,
+      "lineno": 25,
+      "method_id": "testFindUserByEmail",
+      "path": "net/codejava/UserRepositoryTests.java",
+      "receiver": {
+        "class": "net.codejava.UserRepositoryTests",
+        "object_id": 1311429106,
+        "value": "net.codejava.UserRepositoryTests@4e2ad1f2"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "id": 2,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "insert into users (email, first_name, last_name, password) values (?, ?, ?, ?)"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.07936175,
+      "event": "return",
+      "id": 3,
+      "parent_id": 2,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "id": 4,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.first_name as first_na3_0_0_, user0_.last_name as last_nam4_0_0_, user0_.password as password5_0_0_ from users user0_ where user0_.id=?"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.00020213,
+      "event": "return",
+      "id": 5,
+      "parent_id": 4,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "net.codejava.UserRepository",
+      "event": "call",
+      "id": 6,
+      "lineno": -1,
+      "method_id": "findByEmail",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "p0",
+          "object_id": 819197315,
+          "value": "ravikumar@gmail.com"
+        }
+      ],
+      "path": "net/codejava/UserRepository.java",
+      "receiver": {
+        "class": "com.sun.proxy.$Proxy141",
+        "object_id": 860144087,
+        "value": "org.springframework.data.jpa.repository.support.SimpleJpaRepository@1235732d"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "defined_class": "net.codejava.UserRepository",
+      "event": "call",
+      "id": 7,
+      "lineno": -1,
+      "method_id": "findByEmail",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "p0",
+          "object_id": 819197315,
+          "value": "ravikumar@gmail.com"
+        }
+      ],
+      "path": "net/codejava/UserRepository.java",
+      "receiver": {
+        "class": "com.sun.proxy.$Proxy172",
+        "object_id": 2024971776,
+        "value": "org.springframework.data.jpa.repository.support.SimpleJpaRepository@1235732d"
+      },
+      "static": false,
+      "thread_id": 1
+    },
+    {
+      "event": "call",
+      "id": 8,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "select user0_.id as id1_0_, user0_.email as email2_0_, user0_.first_name as first_na3_0_, user0_.last_name as last_nam4_0_, user0_.password as password5_0_ from users user0_ where user0_.email=?"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.0001001,
+      "event": "return",
+      "id": 9,
+      "parent_id": 8,
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.00937144,
+      "event": "return",
+      "id": 10,
+      "parent_id": 7,
+      "return_value": {
+        "class": "net.codejava.User",
+        "object_id": 367559104,
+        "value": "User{id=11, email='ravikumar@gmail.com', password='ravi2020', firstName='Ravi', lastName='Kumar'}"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.03077151,
+      "event": "return",
+      "id": 11,
+      "parent_id": 6,
+      "return_value": {
+        "class": "net.codejava.User",
+        "object_id": 367559104,
+        "value": "User{id=11, email='ravikumar@gmail.com', password='ravi2020', firstName='Ravi', lastName='Kumar'}"
+      },
+      "thread_id": 1
+    },
+    {
+      "elapsed": 0.18788399,
+      "event": "return",
+      "id": 12,
+      "parent_id": 1,
+      "thread_id": 1
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "User repositorys test find user by email",
+    "app": "java",
+    "language": {
+      "name": "java",
+      "version": "11.0.23+9-adhoc..jdk11u",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "junit",
+      "type": "tests"
+    },
+    "recording": {
+      "defined_class": "net.codejava.UserRepositoryTests",
+      "method_id": "testFindUserByEmail"
+    },
+    "source_location": "net/codejava/UserRepositoryTests.java:25",
+    "frameworks": [
+      {
+        "name": "JUnit",
+        "version": "5"
+      }
+    ],
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "testFindUserByEmail",
+                  "type": "function",
+                  "static": false,
+                  "location": "net/codejava/UserRepositoryTests.java:25"
+                }
+              ],
+              "name": "UserRepositoryTests",
+              "type": "class"
+            },
+            {
+              "children": [
+                {
+                  "name": "findByEmail",
+                  "type": "function",
+                  "static": false,
+                  "location": "net/codejava/UserRepository.java:-1"
+                }
+              ],
+              "name": "UserRepository",
+              "type": "class"
+            }
+          ],
+          "name": "codejava",
+          "type": "package"
+        }
+      ],
+      "name": "net",
+      "type": "package"
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "insert into users (email, first_name, last_name, password) values (?, ?, ?, ?)"
+        },
+        {
+          "type": "query",
+          "name": "select user0_.id as id1_0_0_, user0_.email as email2_0_0_, user0_.first_name as first_na3_0_0_, user0_.last_name as last_nam4_0_0_, user0_.password as password5_0_0_ from users user0_ where user0_.id=?"
+        },
+        {
+          "type": "query",
+          "name": "select user0_.id as id1_0_, user0_.email as email2_0_, user0_.first_name as first_na3_0_, user0_.last_name as last_nam4_0_, user0_.password as password5_0_ from users user0_ where user0_.email=?"
+        }
+      ]
+    }
+  ]
+}

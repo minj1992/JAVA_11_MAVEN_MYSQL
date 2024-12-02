@@ -1,0 +1,149 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "headers": {
+          "sec-fetch-mode": "navigate",
+          "referer": "http://localhost:8080/",
+          "sec-fetch-site": "same-origin",
+          "accept-language": "en-GB,en;q=0.9,en-US;q=0.8",
+          "cookie": "SDPSESSIONID=3E2D11C8170F3CDEC4FC0984170D77FA; sdpcsrfcookie=7d924063-a82e-40d3-b114-a59896fbacdc; _zcsr_tmp=7d924063-a82e-40d3-b114-a59896fbacdc; JSESSIONID=222D90699BC2BB5506CDBEB4BB29EF38",
+          "sec-fetch-user": "?1",
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "sec-ch-ua": "\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\"",
+          "host": "localhost:8080",
+          "upgrade-insecure-requests": "1",
+          "connection": "keep-alive",
+          "accept-encoding": "gzip, deflate, br, zstd",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+          "sec-fetch-dest": "document"
+        },
+        "normalized_path_info": "/register",
+        "path_info": "/register",
+        "protocol": "HTTP/1.1",
+        "request_method": "GET"
+      },
+      "id": 1,
+      "thread_id": 139
+    },
+    {
+      "defined_class": "net.codejava.AppController",
+      "event": "call",
+      "id": 2,
+      "lineno": 25,
+      "method_id": "showRegistrationForm",
+      "parameters": [
+        {
+          "class": "org.springframework.validation.support.BindingAwareModelMap",
+          "kind": "req",
+          "name": "model",
+          "object_id": 71239448,
+          "value": "{user=User{id=null, email='null', password='null', firstName='null', lastName='null'}}"
+        }
+      ],
+      "path": "net/codejava/AppController.java",
+      "receiver": {
+        "class": "net.codejava.AppController",
+        "object_id": 1886938557,
+        "value": "net.codejava.AppController@707865bd"
+      },
+      "static": false,
+      "thread_id": 139
+    },
+    {
+      "elapsed": 0,
+      "event": "return",
+      "id": 3,
+      "parent_id": 2,
+      "return_value": {
+        "class": "java.lang.String",
+        "object_id": 1807338706,
+        "value": "signup_form"
+      },
+      "thread_id": 139
+    },
+    {
+      "elapsed": 0.01286703,
+      "event": "return",
+      "http_server_response": {
+        "headers": {
+          "Transfer-Encoding": "chunked",
+          "Keep-Alive": "timeout=60",
+          "X-Content-Type-Options": "nosniff",
+          "Connection": "keep-alive",
+          "Pragma": "no-cache",
+          "Date": "Sun, 01 Dec 2024 15:24:37 GMT",
+          "X-Frame-Options": "DENY",
+          "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+          "Set-Cookie": "JSESSIONID=EEFE3D10C54BD2A933FE904407A65596; Path=/; HttpOnly",
+          "Expires": "0",
+          "X-XSS-Protection": "1; mode=block",
+          "Content-Language": "en-GB",
+          "Content-Type": "text/html;charset=UTF-8"
+        },
+        "status": 200
+      },
+      "id": 4,
+      "parent_id": 1,
+      "thread_id": 139
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "GET /register (200) - 20:54:37.689",
+    "app": "java",
+    "language": {
+      "name": "java",
+      "version": "11.0.23+9-adhoc..jdk11u",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "showRegistrationForm",
+                  "type": "function",
+                  "static": false,
+                  "location": "net/codejava/AppController.java:25"
+                }
+              ],
+              "name": "AppController",
+              "type": "class"
+            }
+          ],
+          "name": "codejava",
+          "type": "package"
+        }
+      ],
+      "name": "net",
+      "type": "package"
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /register"
+        }
+      ]
+    }
+  ]
+}

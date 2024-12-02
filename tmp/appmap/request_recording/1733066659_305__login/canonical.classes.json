@@ -1,0 +1,4 @@
+[
+  "net/codejava/CustomUserDetailsService",
+  "net/codejava/UserRepository"
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "home",
+                "type": "function",
+                "static": false,
+                "location": "net/codejava/HomeController.java:12"
+              }
+            ],
+            "name": "HomeController",
+            "type": "class"
+          }
+        ],
+        "name": "codejava",
+        "type": "package"
+      }
+    ],
+    "name": "net",
+    "type": "package"
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /"
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Welcome to CodeJava Home</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        h3 a {
+            color: #28a745;
+            text-decoration: none;
+        }
+        h3 a:hover {
+            color: #218838;
+        }
+        .card {
+            padding: 20px;
+            border: 1px solid #007bff;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="card">
+            <h1>Welcome to Minjtech.com</h1>
+            <h3><a th:href="@{/users}">List of Users</a></h3>
+            <h3><a th:href="@{/register}">Register</a></h3>
+            <h3><a th:href="@{/login}">Login</a></h3>
+        </div>
+    </div>
+</body>
+</html>
+

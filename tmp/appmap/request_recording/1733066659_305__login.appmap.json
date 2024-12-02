@@ -1,0 +1,195 @@
+{
+  "events": [
+    {
+      "defined_class": "net.codejava.CustomUserDetailsService",
+      "event": "call",
+      "id": 1,
+      "lineno": 15,
+      "method_id": "loadUserByUsername",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "username",
+          "object_id": 1041102738,
+          "value": "minj1992@gmail.com"
+        }
+      ],
+      "path": "net/codejava/CustomUserDetailsService.java",
+      "receiver": {
+        "class": "net.codejava.CustomUserDetailsService",
+        "object_id": 187737357,
+        "value": "net.codejava.CustomUserDetailsService@b30a50d"
+      },
+      "static": false,
+      "thread_id": 139
+    },
+    {
+      "defined_class": "net.codejava.UserRepository",
+      "event": "call",
+      "id": 2,
+      "lineno": -1,
+      "method_id": "findByEmail",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "p0",
+          "object_id": 1041102738,
+          "value": "minj1992@gmail.com"
+        }
+      ],
+      "path": "net/codejava/UserRepository.java",
+      "receiver": {
+        "class": "com.sun.proxy.$Proxy132",
+        "object_id": 508352955,
+        "value": "org.springframework.data.jpa.repository.support.SimpleJpaRepository@56500257"
+      },
+      "static": false,
+      "thread_id": 139
+    },
+    {
+      "defined_class": "net.codejava.UserRepository",
+      "event": "call",
+      "id": 3,
+      "lineno": -1,
+      "method_id": "findByEmail",
+      "parameters": [
+        {
+          "class": "java.lang.String",
+          "kind": "req",
+          "name": "p0",
+          "object_id": 1041102738,
+          "value": "minj1992@gmail.com"
+        }
+      ],
+      "path": "net/codejava/UserRepository.java",
+      "receiver": {
+        "class": "com.sun.proxy.$Proxy161",
+        "object_id": 369530788,
+        "value": "org.springframework.data.jpa.repository.support.SimpleJpaRepository@56500257"
+      },
+      "static": false,
+      "thread_id": 139
+    },
+    {
+      "event": "call",
+      "id": 4,
+      "sql_query": {
+        "database_type": "MySQL",
+        "sql": "select user0_.id as id1_0_, user0_.email as email2_0_, user0_.first_name as first_na3_0_, user0_.last_name as last_nam4_0_, user0_.password as password5_0_ from users user0_ where user0_.email=?"
+      },
+      "thread_id": 139
+    },
+    {
+      "elapsed": 0.04471686,
+      "event": "return",
+      "id": 5,
+      "parent_id": 4,
+      "thread_id": 139
+    },
+    {
+      "elapsed": 0.0734313,
+      "event": "return",
+      "id": 6,
+      "parent_id": 3,
+      "return_value": {
+        "class": "net.codejava.User",
+        "object_id": 324495873,
+        "value": "User{id=10, email='minj1992@gmail.com', password='$2a$10$iIP/BY/YCKNnT17CNg9jiul10ydYekSdUTTTxVb5Ad7FwxFua284u', firstName='Nishant', lastName='minj'}"
+      },
+      "thread_id": 139
+    },
+    {
+      "elapsed": 0.07863981,
+      "event": "return",
+      "id": 7,
+      "parent_id": 2,
+      "return_value": {
+        "class": "net.codejava.User",
+        "object_id": 324495873,
+        "value": "User{id=10, email='minj1992@gmail.com', password='$2a$10$iIP/BY/YCKNnT17CNg9jiul10ydYekSdUTTTxVb5Ad7FwxFua284u', firstName='Nishant', lastName='minj'}"
+      },
+      "thread_id": 139
+    },
+    {
+      "elapsed": 0.08335411,
+      "event": "return",
+      "id": 8,
+      "parent_id": 1,
+      "return_value": {
+        "class": "net.codejava.CustomUserDetails",
+        "object_id": 1577190146,
+        "value": "net.codejava.CustomUserDetails@5e020302"
+      },
+      "thread_id": 139
+    }
+  ],
+  "version": "1.2",
+  "metadata": {
+    "name": "POST /login (UNKNOWN) - 20:54:19.305",
+    "app": "java",
+    "language": {
+      "name": "java",
+      "version": "11.0.23+9-adhoc..jdk11u",
+      "engine": "OpenJDK 64-Bit Server VM"
+    },
+    "client": {
+      "name": "appmap-java",
+      "url": "https://github.com/appland/appmap-java"
+    },
+    "recorder": {
+      "name": "request_recording",
+      "type": "requests"
+    },
+    "recording": {}
+  },
+  "classMap": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "loadUserByUsername",
+                  "type": "function",
+                  "static": false,
+                  "location": "net/codejava/CustomUserDetailsService.java:15"
+                }
+              ],
+              "name": "CustomUserDetailsService",
+              "type": "class"
+            },
+            {
+              "children": [
+                {
+                  "name": "findByEmail",
+                  "type": "function",
+                  "static": false,
+                  "location": "net/codejava/UserRepository.java:-1"
+                }
+              ],
+              "name": "UserRepository",
+              "type": "class"
+            }
+          ],
+          "name": "codejava",
+          "type": "package"
+        }
+      ],
+      "name": "net",
+      "type": "package"
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "select user0_.id as id1_0_, user0_.email as email2_0_, user0_.first_name as first_na3_0_, user0_.last_name as last_nam4_0_, user0_.password as password5_0_ from users user0_ where user0_.email=?"
+        }
+      ]
+    }
+  ]
+}
