@@ -11,7 +11,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 <groupId>net.codejava</groupId>
 <artifactId>app</artifactId>
 <version>1.0</version>
-<packaging>jar</packaging>
+<packaging>war</packaging>
 <name>app</name>
 <description>Demo registration (sign up) and Login (Sign in)</description>
 
